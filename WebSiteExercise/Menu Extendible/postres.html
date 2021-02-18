@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssParaComunidades.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html" target="_blank">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script src = "../JavaScript/JavaScriptComunidades.js"> </script>
+		
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<div class="contenedor">
+				<h1>Para los más golosos</h1>
+			</div>
+		</section>
+		<!--Frutas de aragon (Aragon)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="frutasDeAragon" class="nombrePlato"><b>Frutas de Aragón</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=TnyvqdF8aK4" target="_blank"><img src="../Imagenes/Aragon/frutasDeAragon.jpg" height="73%" width="73%" onmouseover="ingredientesFrutasDeAragon()" onmouseout="fueraIngredientesFrutasDeAragon()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosFrutasDeAragon" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Guirlache (Aragon)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="guirlache" class="nombrePlato"><b>Guirlache</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=EPej9Iizkv0" target="_blank"><img src="../Imagenes/Aragon/guirlache.jpg" height="73%" width="73%" onmouseover="ingredientesGuirlache()" onmouseout="fueraIngredientesGuirlache()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosGuirlache" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Arroz con leche (Asturias)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="arrozConLeche" class="nombrePlato"><b>Arroz con leche</b></li>
+					<li class="imagen"><a href="https://www.hogarmania.com/cocina/recetas/postres/201105/arroz-leche-8271.html" target="_blank"><img src="../Imagenes/Asturias/arrozConLeche.jpg" height="73%" width="73%" onmouseover="ingredientesArrozConLeche()" onmouseout="fueraIngredientesArrozConLeche()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosArrozConLeche" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Moscovitas (Asturias)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="moscovitas" class="nombrePlato"><b>Moscovitas</b></li>
+					<li class="imagen"><a href="http://www.rtve.es/alacarta/videos/aqui-la-tierra/aqui-tierra-hacemos-moscovitas-toda-maquina/4426871/" target="_blank"><img src="../Imagenes/Asturias/moscovitas.jpg" height="73%" width="73%" onmouseover="ingredientesMoscovitas()" onmouseout="fueraIngredientesMoscovitas()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosMoscovitas" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Polkas de Torrelavega (Cantabria)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="polkasDeTorrelavega" class="nombrePlato"><b>Polkas de Torrelavega</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=uuVTcW9PhoM" target="_blank"><img src="../Imagenes/Cantabria/polkasDeTorrelavega.jpg" height="73%" width="73%" onmouseover="ingredientesPolkasDeTorrelavega()" onmouseout="fueraIngredientesPolkasDeTorrelavega()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPolkasDeTorrelavega" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Cocas (Cataluña)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="cocas" class="nombrePlato"><b> Cocas</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=U7MlKOmnLj0" target="_blank"><img src="../Imagenes/Cataluña/cocas.jpg" height="73%" width="73%" onmouseover="ingredientesCocas()" onmouseout="fueraIngredientesCocas()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosCocas" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Brazo de gitano (Galicia)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="brazoDeGitano" class="nombrePlato"><b>Brazo de gitano</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=hoH0JL8GgdQ" target="_blank"><img src="../Imagenes/Galicia/brazo-de-gitano.jpg" height="73%" width="73%" onmouseover="ingredientesBrazoDeGitano()" onmouseout="fueraIngredientesBrazoDeGitano()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosBrazoDeGitano" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Tarta de Santiago (Galicia)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="tartaDeSantiago" class="nombrePlato"><b>Tarta de Santiago</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=TLJIFat1RO4" target="_blank"><img src="../Imagenes/Galicia/Tarta-de-Santiago.jpg" height="73%" width="73%" onmouseover="ingredientesTartaDeSantiago()" onmouseout="fueraIngredientesTartaDeSantiago()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosTartaDeSantiago" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Leche frita (Navarra)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="lecheFrita" class="nombrePlato"><b>Leche frita</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=Gl_7C0Aav_U" target="_blank"><img src="../Imagenes/Navarra/lecheFrita.jpg" height="73%" width="73%" onmouseover="ingredientesLecheFrita()" onmouseout="fueraIngredientesLecheFrita()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosLecheFrita" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Cuajada (Navarra)-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="cuajada" class="nombrePlato"><b>Cuajada</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=EFDVoY-l7ok" target="_blank"><img src="../Imagenes/Navarra/cuajada.jpg" height="73%" width="73%" onmouseover="ingredientesCuajada()" onmouseout="fueraIngredientesCuajada()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosCuajada" class="ingredientesPlatos"></aside>
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>

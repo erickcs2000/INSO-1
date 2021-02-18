@@ -1,0 +1,16 @@
+#dl{
+    background-color:#333;
+	color:#fff;
+    text-align:left;
+    text-indent:30px;
+}
+dt{
+    line-height: 0.8;
+    text-indent: 55px;
+}
+dd{
+    text-indent: 60px;
+}
+#div{
+  padding: 10px;
+}

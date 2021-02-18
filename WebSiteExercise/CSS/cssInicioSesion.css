@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  margin:0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 2%;
+  background: #f4f4f4;
+  margin: 2% 0;
+}
+
+header {
+  background: #333;
+  color:white;
+  padding: 1.5%;
+  text-align: center;
+}
+
+.rellenoUsuario {
+  margin: auto;
+  width: 30%;
+  padding: 1% 0.5%;
+  margin-top:1.5%;
+}
+
+
+#introducir{
+	color: red;
+}
+#formulario {
+  padding: 5% 10%;
+  background: #f4f4f4;
+}
+
+#formulario label {
+  display: block;
+}
+
+#formulario input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#botones{
+	width:110%;
+}
+.boton {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.boton:hover {
+  background: #A1A1A1;
+  cursor: pointer;
+}
+
+#botonEntrar{
+	width:70%;
+}
+#botonVolver{
+	width:25%;
+}
+
+#footer_principal{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:2%;
+	margin-top:2.38%;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssParaComunidades.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html" target="_blank">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script src = "../JavaScript/JavaScriptComunidades.js"> </script>
+		
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<div class="contenedor">
+				<h1>Las mejores carnes</h1>
+			</div>
+		</section>
+		<div id="enunciado">
+			<h1 id="enunciadoPlatos">Platos:</h1>
+			<aside><h3 id="enunciadoIngredientes">Ingredientes:</h3></aside>
+		</div>
+		<br>
+		<br>
+		<br>
+		<!--Paletilla asada (Aragon)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="paletillaAsada" class="nombrePlato"><b>Paletilla asada</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=c0I9jGn1vHQ" target="_blank"><img src="../Imagenes/Aragon/paletillaAsada.jpg" height="73%" width="73%" onmouseover="ingredientesPaletillaAsada()" onmouseout="fueraIngredientesPaletillaAsada()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPaletillaAsada" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Asado de Ternasco (Aragon)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="asadoDeTernasco" class="nombrePlato"><b>Asado de Ternasco</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=SEyPU-zkDPY" target="_blank"><img src="../Imagenes/Aragon/asadoDeTernasco.jpg" height="73%" width="73%" onmouseover="ingredientesAsadoDeTernasco()" onmouseout="fueraIngredientesAsadoDeTernasco()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosAsadoDeTernasco" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Pollo al chilindron (Aragon)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="polloAlChilindron" class="nombrePlato"><b> Pollo al chilindrón</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=nA6x5InJ0fI" target="_blank"><img src="../Imagenes/Aragon/polloAlChilindron.jpg" height="73%" width="73%" onmouseover="ingredientesPolloAlChilindron()" onmouseout="fueraIngredientesPolloAlChilindron()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPolloAlChilindron" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Magra con tomate (Aragon)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="magraConTomate" class="nombrePlato"><b> Magra con tomate</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=gSYfEWwKRTw" target="_blank"><img src="../Imagenes/Aragon/magraConTomate.jpg" height="73%" width="73%" onmouseover="ingredientesMagraConTomate()" onmouseout="fueraIngredientesMagraConTomate()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosMagraConTomate" class="ingredientesPlatos"></aside>
+		</div>
+		<!--cachopo (Asturias)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="cachopo" class="nombrePlato"><b>Cachopo</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=kMYfucKF0i4" target="_blank"><img src="../Imagenes/Asturias/cachopo.jpg" height="73%" width="73%" onmouseover="ingredientesCachopo()" onmouseout="fueraIngredientesCachopo()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosCachopo" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Piuto Caleya (Asturias)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="piutoCaleya" class="nombrePlato"><b>Pitu Caleya</b></li>
+					<li class="imagen"><a href="http://www.rtve.es/alacarta/videos/torres-en-la-cocina/pollo-pitu-caleya-sidra/3496064/" target="_blank"><img src="../Imagenes/Asturias/piutoCaleya.jpg" height="73%" width="73%" onmouseover="ingredientesPiutoCaleya()" onmouseout="fueraIngredientesPiutoCaleya()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPiutoCaleya" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Solomillo de ternera (Cantabria)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="solomilloDeTernera" class="nombrePlato"><b>Solomillo al queso de Tresviso</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=kMYfucKF0i4" target="_blank"><img src="../Imagenes/Cantabria/solomilloDeTernera.jpg" height="73%" width="73%" onmouseover="ingredientesSolomilloDeTernera()" onmouseout="fueraIngredientesSolomilloDeTernera()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosSolomilloDeTernera" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Escargots (Cataluña)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="escargots" class="nombrePlato"><b>Escargots</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=Rn3bjBySYEg" target="_blank"><img src="../Imagenes/Cataluña/escargots.jpg" height="73%" width="73%" onmouseover="ingredientesEscargots()" onmouseout="fueraIngredientesEscargots()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosEscargots" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Butifarra con Mongetes (Cataluña)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="butifarraConMongetes" class="nombrePlato"><b> Butifarra con mongetes</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=xPXy6n8Z5Rc" target="_blank"><img src="../Imagenes/Cataluña/butifarraConMongetes.jpg" height="73%" width="73%" onmouseover="ingredientesButifarraConMongetes()" onmouseout="fueraIngredientesButifarraConMongetes()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosButifarraConMongetes" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Lacon (Galicia)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="laconConGrelos" class="nombrePlato"><b>Lacon con grelos</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=q_ugKSumLsk" target="_blank"><img src="../Imagenes/Galicia/laconConGrelos.jpg" height="73%" width="73%" onmouseover="ingredientesLacon()" onmouseout="fueraIngredientesLacon()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosLacon" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Estofado de rabo de toro (Navarra)-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="estofadoDeRaboDeToro" class="nombrePlato"><b>Estofado de rabo de toro</b></li>
+					<li class="imagen"><a href="https://www.hogarmania.com/cocina/recetas/carnes/201510/carne-toro-30717.html" target="_blank"><img src="../Imagenes/Navarra/estofadoDeRaboDeToro.jpg" height="73%" width="73%" onmouseover="ingredientesEstofadoDeRaboDeToro()" onmouseout="fueraIngredientesEstofadoDeRaboDeToro()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosEstofadoDeRaboDeToro" class="ingredientesPlatos"></aside>
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>

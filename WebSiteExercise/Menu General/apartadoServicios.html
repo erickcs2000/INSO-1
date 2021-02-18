@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssGuiaGastronomico.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script src = "../JavaScript/JavaScriptMenu.js"> </script>
+		
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<div class="contenedor">
+				<h1>Servicios</h1>
+			</div>
+		</section>
+		<div id="contenedor_seccion_principal">
+			<section id="seccion_principal">
+				<h1>Lo que podemos hacer por ustedes.</h1>
+				<p>Nosotros podemos ofreceles una variedad de servicios, desde información sobre sus platos favoritos, hasta reservarles una mesa en un restaurante donde cocinan sus platos favoritos a la perfección.</p>
+				<p>No contentos con esto les ofrecemos ver cómo se hacen los platos con sus recetas correspondientes, de esta forma tendrán la posibilidad de recrear sus platos favoritos en casa.</p>
+				<p>Si quieren mas información siempre pueden irse al apartado de <u><a href="../Menu General/apartadoContactos.html" target="_blank" id="irAContacto">contactos</a></u> y hacernos las preguntas que quieran ahí.</p>
+			</section>
+			<aside id="otroSidebar">
+				<img src="../Imagenes/servicios.jpg" width="100%" height="100%">
+			</aside>
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>

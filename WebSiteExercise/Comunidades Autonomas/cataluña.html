@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssParaComunidades.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script src = "../JavaScript/JavaScriptComunidades.js"> </script>
+		
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<h1>Cataluña</h1>
+		</section>
+		<div id="enunciado">
+			<h1 id="enunciadoPlatos">Platos:</h1>
+			<aside><h3 id="enunciadoIngredientes">Ingredientes:</h3></aside>
+		</div>
+		<br>
+		<br>
+		<br>
+		<!--Pan tumaca-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="panTumaca" class="nombrePlato"><b>Pan tumaca</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=4wGg03FR6ts" target="_blank"><img src="../Imagenes/Cataluña/panTumaca.jpg" height="73%" width="73%" onmouseover="ingredientesPanTumaca()" onmouseout="fueraIngredientesPanTumaca()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPanTumaca" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Bikini-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="bikini" class="nombrePlato"><b>Bikini</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=KNgEQeL3Fto" target="_blank"><img src="../Imagenes/Cataluña/bikini.jpg" height="73%" width="73%" onmouseover="ingredientesBikini()" onmouseout="fueraIngredientesBikini()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosBikini" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Calçots con salsa-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="calçpotsConSalsa" class="nombrePlato"><b>Calçots con salsa</b></li>
+					<li class="imagen"><a href="http://www.rtve.es/alacarta/videos/espana-directo/espana-directo-calcots-su-salsa/442788/" target="_blank"><img src="../Imagenes/Cataluña/calçpotsConSalsa.jpg" height="73%" width="73%" onmouseover="ingredientesCalçpotsConSalsa()" onmouseout="fueraIngredientesCalçpotsConSalsa()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosCalçpotsConSalsa" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Escalivada-->
+		<div class="platos">
+			<section class="deCuchara">
+				<ul>
+					<li id="escalivada" class="nombrePlato"><b>Escalivada</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=OsmiI3uHd-8" target="_blank"><img src="../Imagenes/Cataluña/escalivada.jpg" height="73%" width="73%" onmouseover="ingredientesEscalivada()" onmouseout="fueraIngredientesEscalivada()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosEscalivada" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Escargots-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="escargots" class="nombrePlato"><b>Escargots</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=Rn3bjBySYEg" target="_blank"><img src="../Imagenes/Cataluña/escargots.jpg" height="73%" width="73%" onmouseover="ingredientesEscargots()" onmouseout="fueraIngredientesEscargots()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosEscargots" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Butifarra con Mongetes-->
+		<div class="platos">
+			<section class="carnes">
+				<ul>
+					<li id="butifarraConMongetes" class="nombrePlato"><b> Butifarra con mongetes</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=xPXy6n8Z5Rc" target="_blank"><img src="../Imagenes/Cataluña/butifarraConMongetes.jpg" height="73%" width="73%" onmouseover="ingredientesButifarraConMongetes()" onmouseout="fueraIngredientesButifarraConMongetes()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosButifarraConMongetes" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Cocas-->
+		<div class="platos">
+			<section class="postres">
+				<ul>
+					<li id="cocas" class="nombrePlato"><b> Cocas</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=U7MlKOmnLj0" target="_blank"><img src="../Imagenes/Cataluña/cocas.jpg" height="73%" width="73%" onmouseover="ingredientesCocas()" onmouseout="fueraIngredientesCocas()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosCocas" class="ingredientesPlatos"></aside>
+		</div>
+		<div class="contenedor">
+			<section id="seleccion_comunidades">
+				<h2> Seleccione la comunidad autónoma que guste </h2>
+			
+			<img src="../Imagenes/mapa_espana.png" alt="mapa" width="1100" height="850" border="0" usemap="#comunidades">
+			<map name="comunidades">
+				<area alt="Galicia" shape="poly" coords="156,77, 250,28,300,46,300,194,170,193" href="../Comunidades Autonomas/galicia.html">
+				
+				<area alt="Cataluña" shape="poly" coords="811, 329 , 795, 227, 813, 119, 991, 156, 989, 196, 918, 254" href="../Comunidades Autonomas/cataluña.html">
+				
+				<area alt="Aragón" shape="poly" coords="794, 226, 808, 133, 717,114, 683, 154, 680, 192, 667, 204, 646, 201, 630, 253, 661, 301, 651, 343, 710, 383, 758, 317, 788, 310" href="../Comunidades Autonomas/aragon.html">
+				
+				<area alt="Andalucía" shape="poly" coords="246,627,239,593,258,567,261,554,278,552,285,537,294,539,292,545,298,548,305,547,308,553,337,562,355,558,361,543,371,541,372,544,368,548,371,552,387,541,383,521,413,497,421,495,475,531,477,526,506,527,510,524,523,527,540,523,541,518,557,522,562,519,567,527,584,516,589,518,594,516,606,537,596,555,613,562,622,572,638,575,636,595,652,614,663,618,644,656,627,678,613,667,596,669,594,676,575,680,571,674,462,677,449,689,444,695,424,694,405,703,392,728,386,723,385,733,373,738,343,720,315,670,319,665,313,652,282,628,,269,624" href="../Comunidades Autonomas/andalucia.html">
+				
+				<area alt="Islas Canarias" shape="poly" coords="2, 707, 313, 707, 313, 847, 2, 847" href="../Comunidades Autonomas/islasCanarias.html">
+				
+				<area alt="Islas Baleares" shape="poly" coords="839, 439, 1050, 321, 1092, 378, 885, 527" href="../Comunidades Autonomas/islasBaleares.html">
+				
+				<area alt="Murcia" shape="poly" coords="665, 618, 639, 573, 614, 560, 665, 533, 694, 495, 702, 529, 726, 576, 730, 597,691, 603" href="../Comunidades Autonomas/murcia.html">
+				
+				<area alt="Valencia" shape="poly" coords="725, 575, 795, 493, 756, 425, 810, 330, 759, 309, 718, 391, 694, 385, 671, 430, 696, 444, 693, 471, 713, 487, 708, 543" href="../Comunidades Autonomas/valencia.html">
+				
+				<area alt="Melilla" shape="poly" coords="683, 787, 637, 818, 547, 822, 534, 781" href="../Comunidades Autonomas/melilla.html">
+				
+				<area alt="Castilla la Mancha" shape="poly" coords="636, 277, 665, 304, 650, 344, 674, 369, 668, 431, 693, 445, 685, 470, 710, 494, 686, 496, 671, 517, 667, 528, 634, 533, 616, 548, 611, 557, 601, 515, 466, 523, 426,492,438, 453, 450,426, 426, 433, 416, 417, 413, 414,  415,396, 403, 367, 431,366, 448, 354, 449, 360,470,354,476,357,494,356,523,369,505,386,509,392,530,378,563,375,561,357,533,309,541,289,531,274,554,262,574,262,594,270,609,285, 610, 289" href="../Comunidades Autonomas/castillaLaMancha.html">
+				
+				<area alt="Asturias" shape="poly" coords="305,51,467,70,465,79,380,106,319,107" href="../Comunidades Autonomas/asturias.html">
+				
+				<area alt="Cantabria" shape="poly" coords="466,71,535,61,560,76,504,112,515,124,491,124,471,103,446,93" href="../Comunidades Autonomas/cantabria.html">
+				
+				<area alt="Pais Vasco" shape="poly" coords="536,92,572,71,587,68,618,79,649,71,630,112,619,114,614,139,605,153,589,150,560,126,571,112,552,88" href="../Comunidades Autonomas/paisVasco.html">
+				
+				<area alt="La Rioja" shape="poly" coords="564,141,588,144,590,154,612,155,657,180,641,192,648,200,638,207,629,203,627,192,613,187,604,186,596,197,587,196,597,190,582,188,577,197,571,191,562,182" href="../Comunidades Autonomas/laRioja.html">
+				
+				<area alt="Navarra" shape="poly" coords="652,76,677,87,674,99,717,111,712,129,684,147,675,176,684,191,674,206,644,196,657,186,612,153,622,115" href="../Comunidades Autonomas/navarra.html">
+				
+				<area alt="Castilla y Leon" shape="poly" coords="310,111,339,106,343,97,369,99,379,105,389,101,402,102,445,87,453,105,474,102,482,111,490,127,499,128,513,126,512,107,527,94,553,92,556,106,551,122,577,139,560,141,560,186,574,199,,598,199,603,191,614,187,627,196,627,205,646,207,648,223,635,236,638,249,623,279,608,282,589,265,553,261,523,276,503,293,494,306,458,354,440,352,430,365,404,365,401,353,388,356,345,331,303,350,299,280,303,278,316,260,324,260,349,232,337,221,327,222,326,197,301,196,298,178,316,163,311,146,298,142,299,127,309,124" href="../Comunidades Autonomas/castillaYLeon.html">
+				
+				<area alt="Madrid" shape="poly" coords="528,276,515,291,503,294,500,309,493,309,475,329,474,342,471,342,458,356,471,352,477,357,486,351,524,371,509,387,533,374,561,372,559,357,554,356,557,342,549,329,531,309,538,288" href="../Comunidades Autonomas/madrid.html">
+				
+				<area alt="Extremadura" shape="poly" coords="296,349,287,401,249,402,265,420,275,448,288,456,264,493,269,513,274,538,285,533,326,551,329,558,354,556,360,541,373,540,,370,550,384,541,381,520,413,493,426,491,428,464,435,463,436,449,447,452,442,439,448,433,433,436,410,415,416,404,414,396,409,401,404,401,405,390,398,389,402,354,392,360,379,351,363,351,353,343,344,331,321,343,318,351" href="../Comunidades Autonomas/extremadura.html">
+				
+			</map>
+		</section>
+		</div>
+			</section>
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>

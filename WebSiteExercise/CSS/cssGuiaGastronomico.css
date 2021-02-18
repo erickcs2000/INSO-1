@@ -1,0 +1,243 @@
+body{
+	background-color:#f4f4f4;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+	padding:5px;
+}
+a:hover{
+color:yellow;
+}
+
+.contenedor{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+	align-content:center center;
+}
+
+#header_principal{
+	background-color:coral;
+	color:#fff;
+	text-align:left;
+	font-family:Arial;
+}
+
+nav{
+	background-color:#333;
+	color:#fff;
+	text-align:center;
+}
+
+nav ul{
+	margin:5px;
+	padding:15 5px;
+	list-style: none;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+nav li{
+	flex-grow:1;   /*Las proporciones que toma cada hijo del padre, ul, es decir que todos estan repartidos equitativamente*/
+}
+
+
+nav a{
+	color:#fff;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+}
+
+
+#seccion_inicial{
+	background-image:url('../Imagenes/imagen_Principal.jpg');
+	background-position:center center;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+
+#seccion_inicial h1{
+	color:white;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:17px;
+	padding-right:80px;
+}
+
+#seccion_inicial h2{
+	color : white;
+	font-size: 30px;
+	padding-right: 70px; 	
+}
+
+#seleccion_de_comida {  /*Para que el boton este dentro de la imagen*/
+	display:flex;
+	float:left;
+	width: 10%;
+}
+
+#contenedor_seccion_principal{
+	display:flex;
+}
+
+#seccion_principal{
+	width:60%;
+	padding:0 2% 0 4%;
+}
+
+#otroSidebar{
+	width:30%;
+	background: #333;
+	color:#fff;
+	padding:2%;
+	box-sizing: border-box;
+}
+
+#videoAnuncio{
+	padding-bottom:2%;
+}
+
+#seleccion_comunidades h2{
+	background-color: #000;
+	padding: 2%;
+	margin: 1% #FFFFFF;
+	width:100%;
+	text-align: center;
+}
+
+#footer_principal{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:2%;
+	margin-top:3%;
+}
+
+@media(max-width:600px){   /*Para que cuando haya menos de este width, las columnas se conviertan en filas*/
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}
+
+ /* Menu desplegable */
+ #MenuExtendible {
+    height: 100%; 
+    width: 0; /* Luego lo cambiamos con JavaScript */
+    position: fixed; 
+    z-index: 1; /* Para que se superponga a todo */
+    top: 0;
+    left: 0;
+    background-color:#333;
+    overflow-x: hidden; /* Para no poder hacer scroll en el eje x */
+    padding-top: 60px;
+    transition: 0.5s; /* Para el efecto de transicion */
+  }
+  
+  #MenuExtendible a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+	line-height: 1.6em;
+	border-top:1px #fff solid;
+  }
+  
+  #MenuExtendible a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* El estilo de la cruz del menu desplegable */
+  #MenuExtendible .botonCerrar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* Boton para abrir el menu desplegable */
+  .botonDeAbrir {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .botonDeAbrir:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s; /* el efecto de transicion */
+    padding: 20px;
+  }
+  
+  #anuncioConTemporizador{
+	  display:flex;
+	  margin-right:0%;
+	  margin-top:1%;
+	  width:16%;	  
+	  height:188%;
+	  position:absolute;
+	  z-index:5;
+  }
+  
+  #ocultarAnuncios{
+	  display:flex;
+	  position:absolute;
+	  margin-left: 87.5%;
+	  font-size: 20px;
+	  color:red;
+	  padding:0% 3%;
+	  margin-top:0;
+	  background-color:#B9B6B6;
+  }
+  #anuncios{
+	  transition: 0.3s;
+	  width:100%;
+  }
+  #ocultarAnuncios:hover{
+	  cursor:pointer;
+  }
+
+  .centrarMapa{
+	display: block;
+	margin: auto;
+  }
+  #irAContacto{
+	  padding:0;
+	  color:#555;
+  }
+  #irAContacto:hover{
+	  cursor:pointer;
+	  color:blue;
+  }
+  #comentarioAviso{
+	  color:#555;
+  }
+  #enviarComentario{
+	  border-radius:5px;
+  }
+  #enviarComentario:hover{
+	  cursor:pointer;
+  }

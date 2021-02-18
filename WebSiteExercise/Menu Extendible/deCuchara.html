@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssParaComunidades.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html" target="_blank">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script src = "../JavaScript/JavaScriptComunidades.js"> </script>
+		
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<div class="contenedor">
+				<h1>Los mejores platos de cuchara</h1>
+			</div>
+		</section>
+		<div id="enunciado">
+			<h1 id="enunciadoPlatos">Platos:</h1>
+			<aside><h3 id="enunciadoIngredientes">Ingredientes:</h3></aside>
+		</div>
+		<br>
+		<br>
+		<br>
+		<!--Fabada Asturiana (Asturias)-->
+		<div class="platos">
+			<section class="deCuchara">
+				<ul>
+					<li id="fabadaAsturiana" class="nombrePlato"><b>Fabada Asturiana</b></li>
+					<li class="imagen"><a href="https://www.recetasdeescandalo.com/fabada-asturiana-la-receta-tradicional-y-autentica/" target="_blank"><img src="../Imagenes/Asturias/fabadaAsturiana.jpg" height="73%" width="73%" onmouseover="ingredientesFabadaAsturiana()" onmouseout="fueraIngredientesFabadaAsturiana()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosFabadaAsturiana" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Cocido Lebaniego (Cantabria)-->
+		<div class="platos">
+			<section class="deCuchara">
+				<ul>
+					<li id="cocidoLebaniego" class="nombrePlato"><b>Cocido Lebaniego</b></li>
+					<li class="imagen"><a href="https://www.hogarmania.com/cocina/recetas/legumbres/201602/cocido-lebaniego-31855.html" target="_blank"><img src="../Imagenes/Cantabria/cocidoLebaniego.jpg" height="73%" width="73%" onmouseover="ingredientesCocidoLebaniego()" onmouseout="fueraIngredientesCocidoLebaniego()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosCocidoLebaniego" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Aluviá (Pais Vasco)-->
+		<div class="platos">
+			<section class="deCuchara">
+				<ul>
+					<li id="aluvia" class="nombrePlato"><b>Aluviá</b></li>
+					<li class="imagen"><a href="https://elcomidista.elpais.com/elcomidista/2016/10/26/receta/1477492619_019894.html" target="_blank"><img src="../Imagenes/paisVasco/aluvia.jpg" height="73%" width="73%" onmouseover="ingredientesAluvia()" onmouseout="fueraIngredientesAluvia()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosAluvia" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Pochas con chistorra (Navarra)-->
+		<div class="platos">
+			<section class="deCuchara">
+				<ul>
+					<li id="pochasConChistorra" class="nombrePlato"><b>Pochas con chistorra</b></li>
+					<li class="imagen"><a href="https://www.hogarmania.com/cocina/recetas/legumbres/201109/pochas-chorizo-11614.html" target="_blank"><img src="../Imagenes/Navarra/pochasConChistorra.jpg" height="73%" width="73%" onmouseover="ingredientesPochasConChistorra()" onmouseout="fueraIngredientesPochasConChistorra()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPochasConChistorra" class="ingredientesPlatos"></aside>
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>

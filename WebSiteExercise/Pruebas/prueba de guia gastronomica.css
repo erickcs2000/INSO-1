@@ -1,0 +1,279 @@
+body{
+	background-color:#f4f4f4;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+	padding:5px;
+}
+a:hover{
+color:yellow;
+}
+
+.contenedor{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#header_principal{
+	background-color:coral;
+	color:#fff;
+	text-align:left;
+	font-family:Arial;
+}
+
+nav{
+	background-color:#333;
+	color:#fff;
+	text-align:center;
+}
+
+nav ul{
+	margin:5px;
+	padding:15 5px;
+	list-style: none;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+nav li{
+	flex-grow:1;   /*Las proporciones que toma cada hijo del padre, ul, es decir que todos estan repartidos equitativamente*/
+}
+
+
+nav a{
+	color:#fff;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+}
+
+
+#seccion_inicial{
+	background-image:url('../Imagenes/imagen_Principal.jpg');
+	background-position:center center;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+
+#seccion_inicial h1{
+	color:white;
+	font-size:50px;
+	line-height: 1.6em;
+	padding-top:17px;
+	padding-right:80px;
+}
+
+#seccion_inicial h2{
+	color : white;
+	font-size: 30px;
+	padding-right: 70px; 	
+}
+/*INICIO MENU INTERACTIVO*/
+#tipos_de_comida{
+	display:none;   /*hace que se me quite el checkbox, pero siga funcionando la imagen como boton*/
+}
+
+#seleccion_de_comida{
+	display:flex;
+	float:left;
+	width: 10%;
+	flex-direction:column;
+}
+
+#seleccion_de_comida label{    /*haciendo referencia al label dentro del id de seleccion_de_comida*/
+	display:none;
+	width: 30px;
+	height:30px;
+	padding: 10px;
+	background-color:rgba(0,0,0,0.2);  /*estos son los colores red, green, blue, que les doy valor 0, pero le añado una transparencia de 0.2*/
+}
+
+#seleccion_de_comida label:hover{
+	cursor:pointer;  /*para que cuando pase el mouse por encima de la imagen salga el pointer*/
+	background: coral; 
+}
+
+/*
+#tipos_de_comida input[type:checkbox]:checked + #seleccion_de_comida {
+		border:1px solid black;
+		background-color:coral;
+	}
+*/
+
+.menu ul{
+	position:relative;
+	line-height:1.6em;
+	text-align: left;
+	margin:0;
+	padding:0;
+	list-style-type:none;  /*para que no salgan los puntos*/
+}
+
+.menu li{	
+	width:100%;   /*para que los bordes de los elementos, los tipos de comida, lleguen al borde del padre, ul*/
+	line-height:1.6em;
+	border-top:1px #fff solid;
+	padding:0 5px;
+	box-sizing: border-box;  	/*para 	que los pixeles añadidos del border estén incluidos en el recuadro de cada punto de la lista*/
+}
+
+.menu li a{
+	color:#fff;
+	text-decoration:none;
+}
+
+.menu a:hover{
+	color:yellow;
+}
+
+
+@media (min-width:0px){     /*esto funciona como un "if" en programación, que es que cuando la pagina web tenga un mínimo de 0 px 
+							que haga lo siguiente: */
+							
+	#seleccion_de_comida{
+	background-color:rgba(0,0,0,0)
+	}
+							
+	#seleccion_de_comida label{    /*para que la foto como checkbox no se me salga de la pantalla nada más entrar*/
+		display:block;
+	}
+	
+	.menu{						/*para que se la imagen se pueda mantener donde esta y los li, se puedan mover*/
+		position: relative;
+		background:coral;
+		margin-left: -100%;	/*para que según entres a la página no se vean los li*/
+		width:100%;
+	}
+	
+	.menu ul{
+		flex-direction: column;
+	}
+	
+	#tipos_de_comida:checked ~ .menu {    /*esto significa que cuando el identificador (tipos_de_comida) este checked al ser un checkbox, 
+										  que la clase menu tenga un margen de 0, ya que inicialmente le he puesto un margen de -200px */
+		margin:0;
+		position:relative;
+	}
+		
+}
+/*FIN MENU INTERACTIVO*/
+
+#contenedor_seccion_principal{
+	display:flex;
+}
+
+#seccion_principal{
+	width:60%;
+	padding:0 3% 0 2%;
+}
+
+#sidebar{
+	width:30%;
+	background: #333;
+	color:#fff;
+	padding:2%;
+	box-sizing: border-box;
+}
+
+#seleccion_comunidades h2{
+	background-color: #000;
+	padding: 2%;
+	margin: 1% #FFFFFF;
+	width:100%;
+	text-align: center;
+}
+
+#footer_principal{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:2%;
+	margin-top:3%;
+}
+
+@media(max-width:600px){   /*Para que cuando haya menos de este width, las columnas se conviertan en filas*/
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}
+
+ /*Partir de aqui es el javascript*/
+ /* The sidebar menu */
+ .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color:#333; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

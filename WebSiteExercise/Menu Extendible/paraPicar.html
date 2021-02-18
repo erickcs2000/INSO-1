@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssParaComunidades.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		<script src = "../JavaScript/JavaScriptComunidades.js"> </script>
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html" target="_blank">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<div class="contenedor">
+				<h1>¿Qué comemos para picar?</h1>
+			</div>
+		</section>
+		
+		<div id="enunciado">
+			<h1 id="enunciadoPlatos">Platos:</h1>
+			<aside><h3 id="enunciadoIngredientes">Ingredientes:</h3></aside>
+		</div>
+		<br>
+		<br>
+		<br>
+		<!--Migas aragonesas (Aragon)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="migasAragonesas" class="nombrePlato"><b>Migas Aragonesas</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=iTGuuwfYS0M" target="_blank"><img src="../Imagenes/Aragon/migasAragonesas.jpg" height="73%" width="73%" onmouseover="ingredientesMigasAragonesas()" onmouseout="fueraIngredientesMigasAragonesas()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosMigasAragonesas" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Pastel de cabracho (Asturias)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="pastelDeCabracho" class="nombrePlato"><b>Pastel de cabracho</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=uMpEMdzxO3I" target="_blank"><img src="../Imagenes/Asturias/pastelDeCabracho.jpg" height="73%" width="73%" onmouseover="ingredientesPastelDeCabracho()" onmouseout="fueraIngredientesPastelDeCabracho()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPastelDeCabracho" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Chorizo a la sidra (Asturias)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="chorizoALaSidra" class="nombrePlato"><b>Chorizo a la sidra</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=fgBdJH15PEo" target="_blank"><img src="../Imagenes/Asturias/chorizoALaSidra.jpg" height="73%" width="73%" onmouseover="ingredientesChorizoALaSidra()" onmouseout="fueraIngredientesChorizoALaSidra()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosChorizoALaSidra" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Anchoas de Santoña (Cantabria)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="anchoasDeSantoña" class="nombrePlato"><b>Anchoas de Santoña</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=xKcLJ4woh-4" target="_blank"><img src="../Imagenes/Cantabria/anchoasDeSantoña.jpg" height="73%" width="73%" onmouseover="ingredientesAnchoasDeSantoña()" onmouseout="fueraIngredientesAnchoasDeSantoña()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosAnchoasDeSantoña" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Pan tumaca (Cataluña)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="panTumaca" class="nombrePlato"><b>Pan tumaca</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=4wGg03FR6ts" target="_blank"><img src="../Imagenes/Cataluña/panTumaca.jpg" height="73%" width="73%" onmouseover="ingredientesPanTumaca()" onmouseout="fueraIngredientesPanTumaca()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPanTumaca" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Bikini (Cataluña)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="bikini" class="nombrePlato"><b>Bikini</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=KNgEQeL3Fto" target="_blank"><img src="../Imagenes/Cataluña/bikini.jpg" height="73%" width="73%" onmouseover="ingredientesBikini()" onmouseout="fueraIngredientesBikini()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosBikini" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Calçots con salsa (Cataluña)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="calçpotsConSalsa" class="nombrePlato"><b>Calçots con salsa</b></li>
+					<li class="imagen"><a href="http://www.rtve.es/alacarta/videos/espana-directo/espana-directo-calcots-su-salsa/442788/" target="_blank"><img src="../Imagenes/Cataluña/calçpotsConSalsa.jpg" height="73%" width="73%" onmouseover="ingredientesCalçpotsConSalsa()" onmouseout="fueraIngredientesCalçpotsConSalsa()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosCalçpotsConSalsa" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Pimientos de padron (Galicia)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="pimientos" class="nombrePlato"><b>Pimientos de Padrón</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=JbWq2Ggok5k" target="_blank"><img src="../Imagenes/Galicia/pimientos-de-padron.jpg" height="73%" width="73%" onmouseover="ingredientesPimientosDePadron()" onmouseout="fueraIngredientesPimientosDePadron()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPimientosDePadron" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Pintxos (Pais Vasco)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="pintxos" class="nombrePlato"><b>Pintxos</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=64sfuhqsGCY" target="_blank"><img src="../Imagenes/paisVasco/pintxos.jpg" height="73%" width="73%" onmouseover="ingredientesPintxos()" onmouseout="fueraIngredientesPintxos()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPintxos" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Gildas (Pais Vasco)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="gildas" class="nombrePlato"><b>Gildas</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=f4y7VDYKCUU" target="_blank"><img src="../Imagenes/paisVasco/gildas.jpg" height="73%" width="73%" onmouseover="ingredientesGildas()" onmouseout="fueraIngredientesGildas()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosGildas" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Esparragos (Navarra)-->
+		<div class="platos">
+			<section class="paraPicar">
+				<ul>
+					<li id="esparragos" class="nombrePlato"><b>Esparragos</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=FvBJNh8Qyms" target="_blank"><img src="../Imagenes/Navarra/esparragos.jpg" height="73%" width="73%" onmouseover="ingredientesEsparragos()" onmouseout="fueraIngredientesEsparragos()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosEsparragos" class="ingredientesPlatos"></aside>
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>

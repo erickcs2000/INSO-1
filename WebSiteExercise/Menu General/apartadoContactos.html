@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssGuiaGastronomico.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script src = "../JavaScript/JavaScriptMenu.js"> </script>
+		
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<div class="contenedor">
+				<h1>Nuestro contacto</h1>
+			</div>
+		</section>
+		<div id="contenedor_seccion_principal">
+			<section id="seccion_principal">
+				<h1>Hablenos</h1>
+				<p>Aquí puede hacernos cualquier preguntas, tenemos atencion al cliente 24/7.</p>
+				<ul>
+					<li><b>Persona de contacto:</b>John Comins</li>
+					<li><b>Correo:</b> john.comins@ultrainstinto.com </li>
+					<li><b>Telefono:</b> +34 670 089 165 </li>
+				</ul>
+				
+			</section>
+			<aside id="otroSidebar">
+				<img src="../Imagenes/contacto.jpg" width="100%" height="100%">
+			</aside>
+		</div>
+		<div id="contenedor_seccion_principal">
+			<section id="seccion_principal">
+				<h3>Deja un comentario</h3>
+				<hr>
+				<form>
+					<p id="comentarioAviso">*Tu correo electrónico no será publicado</p>
+					<p id="comentarioCompleto"> 
+					<h3>Comentario</h3>
+					<textarea cols="60" rows="8"></textarea>
+					</p>
+					<p id="rellenoComentario">
+						<label for="nombre">Nombre</label>
+						<input type="text" id="nombre">
+						<label for="correo">Correo</label>
+						<input type="text" id="correo">
+					</p>
+					<p id="comentarioEnviado">
+						<input class="boton" type="button" onclick="error()" value="Enviar comentario" id="enviarComentario">
+					</p>
+				</form>
+			</section>
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>

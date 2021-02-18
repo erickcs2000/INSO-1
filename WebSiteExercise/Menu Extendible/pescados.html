@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssParaComunidades.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html" target="_blank">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script src = "../JavaScript/JavaScriptComunidades.js"> </script>
+		
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<div class="contenedor">
+				<h1>Los mejores pescados</h1>
+			</div>
+		</section>
+		<!--Rabas (Cantabria)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="rabas" class="nombrePlato"><b>Las rabas</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=ON5cUXVFOLc" target="_blank"><img src="../Imagenes/Cantabria/rabas.jpg" height="73%" width="73%" onmouseover="ingredientesRabas()" onmouseout="fueraIngredientesRabas()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosRabas" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Marmita de atun (Cantabria)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="marmitaDeAtun" class="nombrePlato"><b> Marmitako de atún</b></li>
+					<li class="imagen"><a href="https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/receta-de-marmitako-de-atun" target="_blank"><img src="../Imagenes/Cantabria/marmitaDeAtun.jpg" height="73%" width="73%" onmouseover="ingredientesMarmitaDeAtun()" onmouseout="fueraIngredientesMarmitaDeAtun()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosMarmitaDeAtun" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Merluza en salsa verde (Cantabria)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="merluzaEnSalsaVerde" class="nombrePlato"><b> Merluza en salsa verde</b></li>
+					<li class="imagen"><a href="http://www.rtve.es/alacarta/videos/hacer-de-comer/merluza-salsa-verde-dani-garcia/5081776/" target="_blank"><img src="../Imagenes/Cantabria/merluzaEnSalsaVerde.jpg" height="73%" width="73%" onmouseover="ingredientesMerluzaEnSalsaVerde()" onmouseout="fueraIngredientesMerluzaEnSalsaVerde()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosMerluzaEnSalsaVerde" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Percebes (Galicia)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="percebes" class="nombrePlato"><b>Percebes</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=q2mYjtcINBI" target="_blank"><img src="../Imagenes/Galicia/percebes.jpg" height="73%" width="73%" onmouseover="ingredientesPercebes()" onmouseout="fueraIngredientesPercebes()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPercebes" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Pulpo (Galicia)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="pulpoAFeira" class="nombrePlato"><b>Pulpo a feira</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=oWjmKhA6NE0" target="_blank"><img src="../Imagenes/Galicia/pulpo_gallega.jpg" height="73%" width="73%" onmouseover="ingredientesPulpo()" onmouseout="fueraIngredientesPulpo()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPulpo" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Bonito del norte (Pais Vasco)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="bonitoDelNorte" class="nombrePlato"><b>Bonito del norte</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=FQx4bR28Clk" target="_blank"><img src="../Imagenes/paisVasco/bonitoDelNorte.jpg" height="73%" width="73%" onmouseover="ingredientesBonitoDelNorte()" onmouseout="fueraIngredientesBonitoDelNorte()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosBonitoDelNorte" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Angulas (Pais Vasco)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="angulas" class="nombrePlato"><b> Angulas</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=Z_2g887owbQ" target="_blank"><img src="../Imagenes/paisVasco/angulas.jpg" height="73%" width="73%" onmouseover="ingredientesAngulas()" onmouseout="fueraIngredientesAngulas()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosAngulas" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Bacalao en salsa vizcaina (Pais Vasco)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="bacalaoEnSalsaVizcaina" class="nombrePlato"><b> Bacalao en salsa vizcaína</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=RXD-9J8a4Ig" target="_blank"><img src="../Imagenes/paisVasco/bacalaoEnSalsaVizcaina.jpg" height="73%" width="73%" onmouseover="ingredientesBacalaoEnSalsaVizcaina()" onmouseout="fueraIngredientesBacalaoEnSalsaVizcaina()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosBacalaoEnSalsaVizcaina" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Kokotxas de merluza al pil pil (Pais Vasco)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="kokotxasDeMerluzaAlPilPil" class="nombrePlato"><b> Kokotxas de merluza al pil pil</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=6wT-Tccvj7A" target="_blank"><img src="../Imagenes/paisVasco/kokotxasDeMerluzaAlPilPil.jpg" height="73%" width="73%" onmouseover="ingredientesKokotxasDeMerluzaAlPilPil()" onmouseout="fueraIngredientesKokotxasDeMerluzaAlPilPil()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosKokotxasDeMerluzaAlPilPil" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Pimientos rellenos de bacalao (Navarra)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="pimientosRellenosDeBacalao" class="nombrePlato"><b>Pimientos rellenos de bacalao</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=VadMdxIiXuk" target="_blank"><img src="../Imagenes/Navarra/pimientosRellenosDeBacalao.jpg" height="73%" width="73%" onmouseover="ingredientesPimientosRellenosDeBacalao()" onmouseout="fueraIngredientesPimientosRellenosDeBacalao()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosPimientosRellenosDeBacalao" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Alcachofas con almejas (Navarra)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="alcachofasConAlmejas" class="nombrePlato"><b> Alcachofas con almejas</b></li>
+					<li class="imagen"><a href="https://www.hogarmania.com/cocina/recetas/ensaladas-verduras/201412/cardo-alcachofas-almejas-27475.html" target="_blank"><img src="../Imagenes/Navarra/alcachofasConAlmejas.jpg" height="73%" width="73%" onmouseover="ingredientesAlcachofasConAlmejas()" onmouseout="fueraIngredientesAlcachofasConAlmejas()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosAlcachofasConAlmejas" class="ingredientesPlatos"></aside>
+		</div>
+		<!--Trucha a la navarra (Navarra)-->
+		<div class="platos">
+			<section class="pescados">
+				<ul>
+					<li id="truchaALaNavarra" class="nombrePlato"><b> Trucha a la Navarra</b></li>
+					<li class="imagen"><a href="https://www.youtube.com/watch?v=3CHKUQ16Ttw" target="_blank"><img src="../Imagenes/Navarra/truchaALaNavarra.jpg" height="73%" width="73%" onmouseover="ingredientesTruchaALaNavarra()" onmouseout="fueraIngredientesTruchaALaNavarra()"></a></li>
+				</ul>
+			</section>
+			<aside id="ingredientesYDatosTruchaALaNavarra" class="ingredientesPlatos"></aside>
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>

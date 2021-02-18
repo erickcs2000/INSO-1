@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head><meta charset= "utf-8">
+		<link href='../CSS/cssGuiaGastronomico.css' rel='stylesheet' type='text/css'> 
+		<title> Guía gastronómica </title> 
+	</head>
+	<body>
+		
+		<header id="header_principal">
+			<div class="contenedor">
+				<h1>ULTRAINSTINTO</h1>
+			</div>
+		</header>
+
+		<nav>
+			<div class="contenedor">   <!--Para que coja forma la página-->
+				<ul>
+					<li><a href="../Menu General/paginaPrincipal.html" target="_blank">Inicio</a></li>
+					<li><a href="../Menu General/apartadoAcercaDe.html" target="_blank">Acerca de</a></li>
+					<li><a href="../Menu General/apartadoServicios.html" target="_blank">Servicios</a></li>
+					<li><a href="../Menu General/apartadoContactos.html" target="_blank">Contacto</a></li>
+					<li><a href="../Menu General/apartadoUsuario.html">Ser Usuario</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script src = "../JavaScript/JavaScriptMenu.js"> </script>
+		
+		
+		<aside id="seleccion_de_comida">  
+			<div id="main">
+				<button class="botonDeAbrir" onclick="abrirMenu()">&#9776;</button> <!--El codigo ese es para las tres rayas del menu desplegable-->
+			</div>
+			<div id="MenuExtendible">
+				<a href="javascript:void(0)" class="botonCerrar" onclick="cerrarMenu()">&times;</a> <!-- &times Para la cruz-->
+				<a href="../Menu Extendible/paraPicar.html">Para Picar</a>
+				<a href="../Menu Extendible/carnes.html">Carnes</a>
+				<a href="../Menu Extendible/pescados.html">Pescados</a>
+				<a href="../Menu Extendible/deCuchara.html">De Cuchara</a>
+				<a href="../Menu Extendible/postres.html">Postres</a>
+			</div>
+		</aside>
+		
+		<section id="seccion_inicial">
+			<div class="contenedor">
+				<h1>Acerca de nosotros</h1>
+			</div>
+		</section>
+		<div id="contenedor_seccion_principal">
+			<section id="seccion_principal">
+				<h1>Nosotros</h1>
+				<p>Somos un pequeño grupo de estudiantes que hemos decidido hacer una pequeña guia gastronmica para un proyecto de clase. España tiene mucho que contar,  y mucho que mostrar, de todos los placeres de la buena mesa. Ejemplo de ello es el buen número de ferias y convocatorias, tanto profesionales como populares, que se celebran anualmente y que demuestran de forma clara la importancia de España en el panorama gastronómico internacional.</p>
+				<p>Nuestro gupo se compone de cuatro personas: <li>Erick David Cárdenas Silva</li><li>Eduardo Sebastian de Erice</li><li>Carlos Madrid</li><li>David García Lleyda</li></p>
+			</section>
+			<aside id="otroSidebar">
+				<a href="https://www.u-tad.com/" target="_blank"><img src="../Imagenes/u_tad.jpg" width="100%" height="100%" alt="u-tad"></a>
+			</aside>						
+		</div>
+		<footer id="footer_principal">
+			<p>Copyright &copy; 2019 Guía Gastronómica, Ultrainstinto</p> <!--Para el copyright-->
+		</footer>
+	</body>
+</html>
